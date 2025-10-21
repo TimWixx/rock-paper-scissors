@@ -50,10 +50,10 @@ function playGame(){
 
     for (roundsPlayed = 0; roundsPlayed < 5; roundsPlayed++){
 
-        let humanInput = humanChoice();
-        let computerInput = computerChoice();
+        let humanInput = getHumanChoice();
+        let computerInput = getComputerChoice();
 
-        function computerChoice(){
+        function getComputerChoice(){
             if (Math.random()<= 0.34){
                 result = "rock";
             }
@@ -66,7 +66,7 @@ function playGame(){
             return result;
         }
 
-        function humanChoice(){
+        function getHumanChoice(){
             let userInput;
             return userInput = prompt("What is your choice?");
             
